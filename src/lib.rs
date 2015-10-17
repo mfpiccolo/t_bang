@@ -10,8 +10,3 @@ fn print_type_of<'a, T>(_: T) -> &'a str {
   type_name
 }
 
-
-fn main() {
-  let t = t!(vec![1,2,3]);
-  println!("{:?}", t);
-}
