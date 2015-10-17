@@ -1,0 +1,8 @@
+[package]
+name = "t_bang"
+version = "0.1.1"
+authors = ["Mike Piccolo <mfpiccolo@gmail.com>"]
+
+description = "t! for type"
+
+license = "MIT"
