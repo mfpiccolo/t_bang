@@ -2,12 +2,12 @@
 
 #[macro_export]
 macro_rules! t {
-  ($from:expr) => (type_of($from));
+  ($resource:ident) => (type_of($resource));
 }
 
 #[macro_export]
 macro_rules! pt {
-  ($from:expr) => (println!(type_of($from)));
+  ($resource:ident) => (println!(type_of($resource)));
 }
 
 pub extern fn type_of<'a, T>(_: T) -> &'a str {
