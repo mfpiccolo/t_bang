@@ -2,11 +2,13 @@
 
 #[macro_export]
 macro_rules! t {
+  ($resource:expr) => (type_of($resource));
   ($resource:ident) => (type_of($resource));
 }
 
 #[macro_export]
 macro_rules! pt {
+  ($resource:expr) => (println!(type_of($resource)));
   ($resource:ident) => (println!(type_of($resource)));
 }
 
