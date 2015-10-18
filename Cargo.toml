@@ -1,6 +1,9 @@
 [package]
 name = "t_bang"
-version = "0.1.2"
+version = "0.1.4"
 authors = ["Mike Piccolo <mfpiccolo@gmail.com>"]
-description = "t! for type"
+description = "Provides macros for getting the type of a resource, `t!(variable)` will return the type as &str"
 license = "MIT"
+readme = "README.md"
+repository = "https://github.com/mfpiccolo/t_bang"
+homepage = "https://github.com/mfpiccolo/t_bang"
