@@ -1,4 +1,5 @@
 #![feature(core_intrinsics)]
+#![macro_use]
 
 #[macro_export]
 macro_rules! t {
@@ -10,3 +11,6 @@ fn print_type_of<'a, T>(_: T) -> &'a str {
   type_name
 }
 
+pub extern fn something() {
+
+}
