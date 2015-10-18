@@ -2,13 +2,11 @@
 
 #[macro_export]
 macro_rules! t {
-  ($from:expr) => (unsafe { std::intrinsics::type_name::<T>() } as &str);
+  ($from:expr) => (self::print_type_of($from));
 }
+
 
 fn print_type_of<'a, T>(_: T) -> &'a str {
-  unsafe { std::intrinsics::type_name::<T>() } as &str;
-}
-
-pub extern fn something() {
-
+  let type_name = unsafe { std::intrinsics::type_name::<T>() };
+  type_name
 }
