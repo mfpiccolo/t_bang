@@ -8,8 +8,8 @@ macro_rules! t {
 
 #[macro_export]
 macro_rules! pt {
-  ($resource:expr) => (println!(type_of($resource)));
-  ($resource:ident) => (println!(type_of($resource)));
+  ($resource:expr) => (println!("{:?}", type_of($resource)));
+  ($resource:ident) => (println!("{:?}", type_of($resource)));
 }
 
 pub extern fn type_of<'a, T>(_: T) -> &'a str {
